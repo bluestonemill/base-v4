@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>base-v4</artifactId>
+        <groupId>com.bluestonemill</groupId>
+        <version>0.0.20211202.20-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>base-v4-features-auth</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>base-v4-features-auth-api</module>
+        <module>base-v4-features-auth-shiro</module>
+        <module>base-v4-features-auth-shiro-starter</module>
+        <module>base-v4-features-auth-simple</module>
+        <module>base-v4-features-auth-simple-starter</module>
+        <module>base-v4-features-auth-core</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bluestonemill</groupId>
+            <artifactId>base-v4-core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+        </dependency>
+
+        <!--web-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>

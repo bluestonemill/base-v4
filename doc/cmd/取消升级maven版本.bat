@@ -1,0 +1,3 @@
+cd ../../
+
+mvn versions:revert
